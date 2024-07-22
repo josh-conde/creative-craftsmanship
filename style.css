@@ -16,7 +16,7 @@ html {
     font-family: "Montserrat", Arial, sans-serif;
     color: #fff;
     font-size: 16px;
-    
+    line-height: 1.6;
 }
 
 ul, li {
@@ -32,11 +32,15 @@ a {
 
 a:hover {
     color: var(--color-primary);
-    text-decoration: underline;
-    text-decoration-color: var(--color-secondary);
     font-size: .9rem; 
 }
 
+h1 {
+    font-family: "barlow condensed", Arial, sans-serif;
+    font-size: 3rem;
+    color: var(--color-secondary);
+
+}
 .navbar-container {
     width: 100%;
     display: flex;
@@ -60,20 +64,28 @@ a:hover {
     justify-content: space-between;
 }
 
-.mySlides {
-    display: none
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 100%;
 }
 
-img {
-    vertical-align: middle;
+.mySlides {
+    display: none
 }
 
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding: 15px;
 }
 
+.slideshow-container img {
+    border-radius: 8px;
+    height: 550px;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -148,4 +160,21 @@ img {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+.dot-container {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.hero-container {
+    grid-row: 1 span 2;
+    grid-column: 2;
+    padding: 15px; 
+
+    
+}
+
+.hero-container h1 {
+    text-align: center;
 }
