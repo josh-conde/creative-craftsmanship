@@ -151,6 +151,7 @@ h1 {
   transition: background-color 0.6s ease;
 }
 
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -175,6 +176,7 @@ h1 {
 .dot-container {
     grid-row: 2;
     grid-column: 1;
+    text-align: center;
 }
 
 .hero-container {
@@ -185,4 +187,17 @@ h1 {
 
 .hero-container h1 {
     text-align: center;
+}
+
+
+@media (max-width: 960px) {
+
+}
+
+@media (min-width: 1440px) {
+ 
+}
+
+@media (max-width: 768px) {
+
 }
