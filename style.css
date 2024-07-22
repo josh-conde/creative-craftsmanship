@@ -12,7 +12,7 @@
 }
 
 html {
-    background-color: #000;
+    background-color: #111111;
     font-family: "Montserrat", Arial, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -48,11 +48,10 @@ h1 {
     justify-content: space-between;
     padding: 0px 20px;
     border-bottom: 3px solid var(--color-primary)
-
 }
 
 .left-nav img {
-    width: 300px;
+    width: 200px;
 }
 
 .right-nav {
@@ -62,6 +61,8 @@ h1 {
 .right-nav ul {
     display: flex;
     justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 .main-container {
@@ -69,10 +70,13 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     max-width: 100%;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 12px;
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
 .slideshow-container {
@@ -84,8 +88,9 @@ h1 {
 
 .slideshow-container img {
     border-radius: 8px;
-    height: 550px;
+    width: 100%;
 }
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
