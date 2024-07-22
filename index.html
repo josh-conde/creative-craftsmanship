@@ -8,6 +8,41 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="left-nav">
+                <a href="index.html"><img src="img/creative logo.jpeg" alt="Creative Crafstmanship Logo"></a>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/bar-1.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/bathroom-1.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/ceiling-1.jpeg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
 </body>
 </html>
