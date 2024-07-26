@@ -369,12 +369,16 @@ h2, h3 {
   }
 
   .services-text {
-    grid-template-rows: 10% 15% 5% 70%;
+    grid-template-rows: .5fr .5fr .5fr 10fr;
   }
 
   .call-to-action {
     margin-top: 180px;
     width: 80%;
+  }
+
+  .container {
+    width: 90%;
   }
 }
 
@@ -400,12 +404,28 @@ h2, h3 {
   }
 
   .services-text {
-    grid-template-rows: 10% 15% 5% 70%;
+    grid-template-rows: .1fr .5fr .1fr 3fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-card img {
+    width: 80%;
+    height: auto;
+    
   }
 
   .call-to-action {
     margin-top: 180px;
     width: 80%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .left-footer, .middle-footer, .right-footer {
+    font-size: 12px;
   }
 
 }
