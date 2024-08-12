@@ -74,7 +74,7 @@ h2, h3 {
 }
 
 .left-nav img {
-  width: 200px;
+  width: 250px;
 }
 
 .right-nav {
@@ -176,7 +176,7 @@ h2, h3 {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--color-secondary);
 }
 
 .fade {
@@ -356,6 +356,9 @@ h2, h3 {
   width: 150px;
 }
 
+.mobile {
+  display: none;
+}
 @media (max-width: 960px) {
   .main-container {
     grid-template-columns: 1fr;
