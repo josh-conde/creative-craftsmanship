@@ -491,7 +491,7 @@ h2, h3 {
   }
   
   .mobile-image {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -499,10 +499,9 @@ h2, h3 {
   .m-slide {
     display: flex;
     position: absolute;
-    width: 90%;
     justify-content: center;
     align-items: center;
-    right: 30px;
+    margin-top: 60px;
     
   }
 
