@@ -24,3 +24,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
+
+function navToggle () {
+    btn.classList.toggle('open');
+    nav.classList.toggle('hidden');
+    document.body.classList.toggle('no-scroll');
+}
+
+btn.addEventListener('click', navToggle);
