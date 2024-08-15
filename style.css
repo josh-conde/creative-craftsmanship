@@ -550,4 +550,8 @@ h2, h3 {
     justify-items: center;;
   }
 
+  .left-footer li, .middle-footer li, .right-footer li {
+    font-size: .6rem
+  }
+
 }
