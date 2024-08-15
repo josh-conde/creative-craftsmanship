@@ -535,7 +535,8 @@ h2, h3 {
   }
   
   .hamburger {
-    display: block; 
+    display: block;
+    padding: 20px; 
   }
 
   #right-nav-links {
@@ -552,6 +553,14 @@ h2, h3 {
 
   .left-footer li, .middle-footer li, .right-footer li {
     font-size: .6rem
+  }
+
+  .services-text p {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.7rem;
   }
 
 }
