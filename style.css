@@ -270,7 +270,7 @@ h2, h3 {
 }
 
 .services-text p {
-  width: 70%;
+  width: 80%;
   justify-self: center;
 }
 
@@ -517,7 +517,6 @@ h2, h3 {
   }
 
   .service-card img {
-    width: 80%;
     height: auto;
     
   }
