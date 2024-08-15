@@ -35,3 +35,21 @@ function navToggle () {
 }
 
 btn.addEventListener('click', navToggle);
+
+let mslideIndex = 0;
+
+function mshowSlides() {
+    const mslides = document.querySelectorAll('#mobileSlideshow .m-slide');
+    mslides.forEach((mslide, index) => {
+        mslide.classList.remove('m-active');
+        if (index === mslideIndex) {
+            mslide.classList.add('m-active');
+        }
+    });
+    mslideIndex = (mslideIndex + 1) % mslides.length;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    mshowSlides();
+    setInterval(mshowSlides, 3000);
+});
