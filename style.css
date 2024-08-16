@@ -40,6 +40,7 @@ h1 {
   font-size: 3rem;
   color: var(--color-secondary);
   text-align: center;
+  margin-top: 10px;
 }
 
 h2, h3 {
@@ -526,9 +527,9 @@ h2, h3 {
     grid-template-rows: .5fr 1fr 1.5fr;
     margin-top: 20px;
   }
-
+  
   .hero-container p {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -614,6 +615,7 @@ h2, h3 {
   .call-to-action {
     margin-top: 10px;
   }
+
   .call-to-action h2 {
     font-size: 1.5rem;
   }
