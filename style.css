@@ -164,7 +164,7 @@ h2, h3 {
 
 .mobile-menu ul {
   line-height: 3;
-  border-bottom: #777 solid 1px; 
+  border-bottom: var(--color-primary) solid 1px; 
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
