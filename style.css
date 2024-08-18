@@ -16,7 +16,7 @@ html {
   font-family: "Montserrat", Arial, sans-serif;
   color: whitesmoke;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.9;
 }
 
 ul, li {
@@ -461,6 +461,59 @@ h2, h3 {
   width: 150px;
 }
 
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.services-body img {
+  border-radius: 12px;
+  width: 80%;
+}
+
+.faq {
+  max-width: 100%;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.faq-label {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--color-primary);
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+  background-color: #111;
+}
+
+.faq-content img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-content {
+  max-height: 100%; 
+  padding: 10px;
+}
 
 @media (max-width: 960px) {
   .main-container {
