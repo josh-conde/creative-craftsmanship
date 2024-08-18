@@ -389,7 +389,7 @@ h2, h3 {
 
 .service-card img {
   width: 100%;
-  border-radius: 2px;
+  border-radius: 75%;
   opacity: .6;
 }
 
@@ -397,6 +397,8 @@ h2, h3 {
   opacity: 1;
   cursor: pointer;
   box-shadow: var(--color-secondary) 1px 1px 10px;
+  border-radius: 12px;
+  transition: border-radius .8s .3s ease-in;
 }
 
 #service-title {
