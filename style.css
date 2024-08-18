@@ -389,7 +389,7 @@ h2, h3 {
 
 .service-card img {
   width: 100%;
-  border-radius: 75%;
+  border-radius: 50%;
   opacity: .6;
 }
 
@@ -515,6 +515,12 @@ h2, h3 {
 .faq-item input[type="checkbox"]:checked ~ .faq-content {
   max-height: 100%; 
   padding: 10px;
+}
+
+.faq-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
