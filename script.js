@@ -5,13 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) {
         showSlides(slideIndex);
 
-        function plusSlides(n) {
+
+        window.plusSlides = function (n) {
             showSlides(slideIndex += n);
         }
 
-        function currentSlide(n) {
+
+        window.currentSlide = function (n) {
             showSlides(slideIndex = n);
         }
+
 
         function showSlides(n) {
             let i;
@@ -32,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     const btn = document.getElementById('menu-btn');
     const nav = document.getElementById('menu');
 
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', navToggle);
     }
 
+  
     let mslideIndex = 0;
 
     function mshowSlides() {
