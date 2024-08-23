@@ -523,6 +523,7 @@ h2, h3 {
   cursor: pointer;
 }
 
+
 @media (max-width: 960px) {
   .main-container {
     grid-template-columns: 1fr;
