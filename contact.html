@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
+    <script src="validate.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="Z5jctBCN"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -46,23 +48,29 @@
         <div class="contact container">
             <h1>Contact</h1>
             <div class="contact-form">
-                <form id="contactForm" method="POST" action="contact.php">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                  
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                  
-                    <label for="phone">Phone Number:</label>
-                    <input type="text" id="phone" name="phone">
-                  
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" draggable="false" required></textarea>
-                  
-                    <button type="submit">Send Message</button>
-                  </form>
-                  
-                  <script src="validate.js"></script>
+                <div class="left-contact">
+                    <br>
+                    <form id="contactForm" method="POST" action="contact.php">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                      
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                      
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone">
+                      
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" draggable="false" required></textarea>
+                      
+                        <button type="submit">Send Message</button>
+                      </form>
+                </div>
+                <div class="right-contact">
+                    <h3>Checkout our Facebook </h3>
+                    <p>Looking for inspiration or just want to see more of our work? <br>Follow <span id="creative">Creative</span> <span id="craftsmanship">Craftsmanship</span> on Facebook!</p>
+                    <div class="fb-page" data-href="https://www.facebook.com/CreativeCraftmanship/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/CreativeCraftmanship/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CreativeCraftmanship/">Creative Craftsmanship</a></blockquote></div>
+                </div>
             </div>
         </div>
     </main>

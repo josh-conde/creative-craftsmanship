@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "Message:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you! Your message has been submitted. We look forward to speaking with you.";
+        echo "Thank you! Your message has been submitted. We look forward to speaking with you!";
     } else {
         echo "Oops! Looks like we couldn't send your message. Please try again.";
     }
