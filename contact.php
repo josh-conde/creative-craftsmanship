@@ -6,12 +6,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])));
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format.";
+        echo "Invalid email.";
         exit;
     }
 
-    if (empty($name) || empty($message)) {
-        echo "Name and message fields are required.";
+    if (empty($name) || empty($message) || empty($email)) {
+        echo "Name, email, and a brief message are required.";
         exit;
     }
 
@@ -22,16 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                "Reply-To: $email" . "\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
-    $body = "You have received a new message from the contact form on your website.\n\n".
+    $body = "You have received a new message from $name via the contact form - Creative Craftsmanship.\n\n".
             "Name: $name\n".
             "Email: $email\n".
             "Phone: $phone\n".
             "Message:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you! Your message has been sent.";
+        echo "Thank you! Your message has been submitted. We look forward to speaking with you.";
     } else {
-        echo "Oops! Something went wrong, and we couldn't send your message.";
+        echo "Oops! Looks like we couldn't send your message. Please try again.";
     }
 } else {
     echo "Invalid request method.";
