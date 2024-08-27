@@ -477,12 +477,13 @@ h2, h3 {
 
 .services-body img {
   border-radius: 12px;
-  width: 80%;
+  width: 70%;
+  margin: 10px;
 }
 
 .faq {
   max-width: 100%;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
 }
 
@@ -500,6 +501,8 @@ h2, h3 {
 }
 
 .faq-content {
+  display: flex;
+  flex-wrap: wrap;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -509,7 +512,8 @@ h2, h3 {
 
 .faq-content img {
   margin: 0 auto;
-  width: 100%;
+  padding: 2px;
+  width: 60%;
 }
 
 .faq-item input[type="checkbox"]:checked ~ .faq-content {
@@ -680,6 +684,10 @@ h2, h3 {
 
   .call-to-action h2 {
     font-size: 1.3rem;
+  }
+
+  .services-body img {
+    width: 90%;
   }
 
 }
