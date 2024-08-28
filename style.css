@@ -479,6 +479,7 @@ h2, h3 {
   border-radius: 12px;
   width: 70%;
   margin: 10px;
+
 }
 
 .faq {
@@ -514,6 +515,7 @@ h2, h3 {
   margin: 0 auto;
   padding: 2px;
   width: 60%;
+  height: 90%;
 }
 
 .faq-item input[type="checkbox"]:checked ~ .faq-content {
