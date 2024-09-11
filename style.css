@@ -646,7 +646,7 @@ h2, h3 {
   .hero-container {
     display: grid;
     grid-template-rows: .5fr 1fr 1.5fr;
-    margin-top: 20px;
+    margin-top: 125px;
   }
   
   .hero-container p {
